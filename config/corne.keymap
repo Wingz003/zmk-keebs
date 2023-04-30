@@ -27,13 +27,13 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  | PAGE_UP|  UP  |  PAGE_DOWN  |  0  | BKSP   |
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |    |  UP  |    |    | BKSP   |
 // | LCTRL|     |     |     |     |     |   | HOME|  LEFT |  DOWN |   RIGHT   | END | QMARK  |
 // | GUI |      |     |     |     |     |   |  _  |      |      |         | "|" | MINUS  | 
 //                    | GUI |     | SHFT |   | SHFT |     | ALT |
                         bindings = <
-   &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp N6   &kp PAGE_UP   &kp UP_ARROW &kp PAGE_DOWN    &kp N0 &kp BSPC
-   &bt LCTRL &trans  &trans  &trans  &trans  &trans    &kp HOME &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp END &kp QMARK
+   &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &trans   &trans   &kp UP_ARROW &trans    &trans &kp BSPC
+   &bt LCTRL &trans  &trans  &trans  &trans  &trans    &trans &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &trans &kp QMARK
    &kp LGUI  &trans       &trans       &trans       &trans       &trans         &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
                                     &kp LGUI     &trans       &kp LSHFT      &kp RSHFT  &trans   &kp RALT
                         >;
