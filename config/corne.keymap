@@ -28,12 +28,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  | PG_UP|  UP  |  PG_DN  |  0  | BKSP   |
-// | LCTRL| BT1 | BT2 | BT3 | BT4 | BT5 |   | HOME|  LFT |  DWN |   RGT   | END | QMARK  |
+// | LCTRL|     |     |     |     |     |   | HOME|  LFT |  DWN |   RGT   | END | QMARK  |
 // | GUI |      |     |     |     |     |   |  _  |      |      |         | "|" | MINUS  | 
 //                    | GUI |     | SHFT |   | SHFT |     | ALT |
                         bindings = <
    &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp N6   &kp PG_UP   &kp UP &kp PG_DN    &kp N0 &kp BSPC
-   &bt LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &kp QMARK
+   &bt LCTRL &trans       &trans       &trans       &trans       &trans    &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &kp QMARK
    &kp LGUI  &trans       &trans       &trans       &trans       &trans         &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
                                     &kp LGUI     &trans       &kp LSHFT      &kp RSHFT  &trans   &kp RALT
                         >;
