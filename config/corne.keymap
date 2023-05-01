@@ -33,7 +33,7 @@
 //                    | GUI |     | SHFT |   | SHFT |     | ALT |
                         bindings = <
    &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &trans &kp UP &trans &trans &kp BSPC
-   &bt LCTRL &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans &kp QMARK
+   &bt LCTRL &trans &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp RIGHT  &kp QMARK
    &kp LGUI  &trans       &trans       &trans       &trans       &trans         &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
                                     &kp LGUI     &trans       &kp LSHFT      &kp RSHFT  &trans   &kp RALT
                         >;
