@@ -58,7 +58,7 @@
                         ;
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |PG_UP |  UP  |PG_DN|     | BKSP   |
-// | LCTRL|     |     |     |     |     |   | HOME|  LEFT| DOWN |RIGHT| END | QMARK  |
+// | LCTRL|     |     | copy|paste|     |   | HOME|  LEFT| DOWN |RIGHT| END | QMARK  |
 // | GUI |      |     |     |     |     |   |  _  |      |      |     | "|" | MINUS  | 
 //                    | GUI |     | SHFT |   | SHFT |     | ALT |
                         bindings = <
