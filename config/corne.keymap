@@ -9,6 +9,30 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+  macros {
+        COPY: COPY {
+            label = "COPY";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
+        },
+
+         PASTE: PASTE {
+            label = "PASTE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -28,31 +52,10 @@
                         >;
                 };
                 lower_layer {
-                        {
-                          macros {
-        COPY: COPY {
-            label = "COPY";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                ;
-        },
-         PASTE: PASTE {
-            label = "PASTE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                ;
-        }
-                          }
-    };
-                   
+                        bindings 
+                        = <&COPY>,
+                          <&PASTE>      
+                        ;
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |PG_UP |  UP  |PG_DN|     | BKSP   |
 // | LCTRL|     |     |     |     |     |   | HOME|  LEFT| DOWN |RIGHT| END | QMARK  |
