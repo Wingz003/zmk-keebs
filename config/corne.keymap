@@ -38,8 +38,7 @@
                 , <&macro_tap &kp C>
                 , <&macro_release &kp LCTRL>
                 ;
-        };
-
+        },
          PASTE: PASTE {
             label = "PASTE";
             compatible = "zmk,behavior-macro";
@@ -49,7 +48,7 @@
                 , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL>
                 ;
-        };
+        }
     };
                    
 // -----------------------------------------------------------------------------------------
