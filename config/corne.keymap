@@ -19,7 +19,7 @@
                 , <&macro_tap &kp C>
                 , <&macro_release &kp LCTRL>
                 ;
-        },
+        };
 
          paste: paste {
             label = "paste";
