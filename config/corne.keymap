@@ -12,6 +12,30 @@
         keymap {
                 compatible = "zmk,keymap";
 
+       macros {
+        COPY: COPY {
+            label = "COPY";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+         PASTE: PASTE {
+            label = "PASTE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+    };
+
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | LALT |  '  |  ,  |  .  |  P  |  Y  |   |  F  |  G   |  C  |  R  |  L  | BKSP |
@@ -26,15 +50,19 @@
                         >;
                 };
                 lower_layer {
+                        bindings 
+                        = <&COPY>,
+                          <&PASTE>      
+                        ;
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |      |  UP  |     |     | BKSP   |
-// | LCTRL|     |     |     |     |     |   |     |  LEFT| DOWN |RIGHT|     | QMARK  |
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |PG_UP |  UP  |PG_DN|     | BKSP   |
+// | LCTRL|     |     |     |     |     |   | HOME|  LEFT| DOWN |RIGHT| END | QMARK  |
 // | GUI |      |     |     |     |     |   |  _  |      |      |     | "|" | MINUS  | 
 //                    | GUI |     | SHFT |   | SHFT |     | ALT |
                         bindings = <
-   &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &trans &kp UP &trans &trans &kp BSPC
-   &bt LCTRL &trans &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp RIGHT  &kp QMARK
-   &kp LGUI  &trans       &trans       &trans       &trans       &trans         &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
+   &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &kp PG_UP &kp UP &kp PG_DN &trans &kp BSPC
+   &bt LCTRL &trans &trans &COPY &PASTE &trans &trans &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END  &kp QMARK
+   &kp LGUI  &trans &trans &trans &trans &trans &trans  &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
                                     &kp LGUI     &trans       &kp LSHFT      &kp RSHFT  &trans   &kp RALT
                         >;
                 };
