@@ -10,8 +10,8 @@
 
 / {
   macros {
-        COPY: COPY {
-            label = "COPY";
+        copy: copy {
+            label = "copy";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -21,8 +21,8 @@
                 ;
         },
 
-         PASTE: PASTE {
-            label = "PASTE";
+         paste: paste {
+            label = "paste";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -53,8 +53,8 @@
                 };
                 lower_layer {
                         bindings 
-                        = <&COPY>,
-                          <&PASTE>      
+                        = <&copy>,
+                          <&paste>      
                         ;
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |PG_UP |  UP  |PG_DN|     | BKSP   |
