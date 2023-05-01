@@ -88,7 +88,7 @@
                         bindings = <
    &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &kp PG_UP &kp UP &kp PG_DN &trans &kp BSPC
    &bt LCTRL &trans &trans  &trans &copy &paste &trans &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END  &kp QMARK
-   &kp LGUI  &kp F12 &trans &trans &trans &trans &refresh &untab  &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
+   &kp LGUI  &kp F12 &trans &trans &refresh &untab &trans &trans   &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
                                     &kp LGUI     &trans       &kp LSHFT      &kp RSHFT  &trans   &kp RALT
                         >;
                 };
