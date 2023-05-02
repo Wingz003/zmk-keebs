@@ -81,14 +81,14 @@
                           <&refresh>      
                         ;
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |PG_UP |  UP  |PG_DN|     | BKSP   |
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |     |PG_UP |  UP  |PG_DN|     | FSLH   |
 // | LCTRL|     |     | copy|paste|     |   | HOME|  LEFT| DOWN |RIGHT| END | QMARK  |
 // | GUI  | F12 |     |     |refresh|untab|   |  _  |      |      |     | "|" | MINUS  | 
 //                    | GUI |     | SHFT |   | SHFT |     | ALT |
                         bindings = <
-   &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &kp PG_UP &kp UP &kp PG_DN &trans &kp BSPC
-   &bt LCTRL &trans &trans  &trans &copy &paste &trans &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END  &kp QMARK
-   &kp LGUI  &kp F12 &trans &trans &refresh &untab &trans &trans   &kp UNDER   &trans   &trans &trans    &kp PIPE &kp MINUS
+   &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &kp PG_UP &kp UP &kp PG_DN &trans &kp FSLH
+   &kp LCTRL &trans &trans  &trans &copy &paste &trans &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END  &kp QMARK
+   &kp LGUI  &kp F12 &trans &refresh &untab &trans &trans &kp UNDER &trans   &trans &trans    &kp PIPE &kp MINUS
                                     &kp LGUI     &trans       &kp LSHFT      &kp RSHFT  &trans   &kp RALT
                         >;
                 };
